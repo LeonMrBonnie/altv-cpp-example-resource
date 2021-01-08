@@ -1,6 +1,6 @@
-#include "player.h"
+#include "Player.h"
 
-void Player::SpawnPersonalVehicle(char* model, alt::Vector3f pos)
+void Player::SpawnPersonalVehicle(const char* model, alt::Vector3f pos)
 {
     auto veh = alt::ICore::Instance().CreateVehicle(alt::ICore::Instance().Hash(model), pos, {0, 0, 0});
     veh->SetNumberplateText("CPP");
